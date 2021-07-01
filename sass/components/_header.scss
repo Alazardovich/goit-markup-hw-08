@@ -1,0 +1,115 @@
+.page-header {
+  font-family: $primery-text;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  border-bottom: 1px solid #ececec;
+  /* padding-bottom: 25px; */
+  /* padding-top: 24px; */
+}
+/* header menu */
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+  padding: 0;
+}
+.site-nav .site-nav__item {
+  margin-left: 50px;
+}
+.site-nav .site-nav__item:first-child {
+  margin-left: 0;
+}
+
+/* Позиционированние шапки*/
+.site-nav .current::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  bottom: -1px;
+  background: #2196f3;
+}
+
+.auth-nav {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.auth-nav .auth-nav__item {
+  margin-right: 50px;
+}
+.auth-nav .auth-nav__item:last-child {
+  margin-right: 0;
+}
+
+.link-header {
+  font-family: $primery-text;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: inherit;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-decoration: none;
+}
+.link-header {
+  display: inline-flex;
+  align-items: center;
+  fill: #757575;
+}
+
+.link-header__icon-email {
+  display: inline-block;
+  width: 22px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.link-header__icon-phone {
+  display: inline-block;
+  width: 14px;
+  height: 22px;
+  margin-right: 10px;
+}
+
+.site-nav .link-header,
+.auth-nav .link-header {
+  transition: color 250ms $method-transition;
+}
+.link-header {
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    color: $accent-color;
+  }
+}
+
+// .site-nav .link-header:hover,
+// .site-nav .link-header:focus,
+// .auth-nav .link-header:hover,
+// .auth-nav .link-header:focus {
+//   color: $accent-color;
+// }
+.auth-nav .link-header {
+  color: $title-color;
+}
+.current {
+  position: relative;
+  color: #2196f3;
+}

@@ -1,0 +1,55 @@
+.section__name {
+  font-family: $primery-text;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0 0 50px;
+}
+.section-background {
+  background-color: #f5f4fa;
+}
+.set-card__name {
+  font-family: $primery-text;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.set-card__title {
+  text-align: center;
+  padding: 30px 32px;
+}
+
+.set-card {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+}
+.set-card__item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background: $primery-background;
+  margin-left: 30px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+/* box-shadow: var(--card-shadow);*/
+
+.set-card p {
+  font-family: $primery-text;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-color;
+  margin: 0;
+}

@@ -1,0 +1,15 @@
+.logo {
+  /* cursor: default; */
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  color: $accent-color;
+  margin: 0px;
+  /* display: flex; */
+}
+.logo__studio-black {
+  color: $primery-color;
+}

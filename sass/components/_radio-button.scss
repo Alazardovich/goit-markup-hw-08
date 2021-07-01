@@ -1,0 +1,58 @@
+/* sectioin porfolio */
+
+.section-button {
+  font-family: $primery-text;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  color: $primery-text;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.set-button {
+  justify-content: center;
+  display: flex;
+  list-style: none;
+  margin-bottom: 56px;
+  padding: 0;
+  margin-top: 0;
+}
+
+.set-button__button {
+  font-family: $primery-text;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  padding: 6px 22px;
+  /* background: var(--primery-background); */
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  background: #f5f4fa;
+}
+.set-button li {
+  margin-left: 8px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+.set-button__button {
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $primery-background;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+.set-button__button {
+  color: $primery-color;
+  transition: background-color 250ms $method-transition,
+    color 250ms $method-transition, box-shadow 250ms $method-transition;
+}

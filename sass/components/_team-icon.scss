@@ -1,0 +1,54 @@
+.set-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.set-icon__item {
+  margin-left: 10px;
+  margin-top: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.set-icon__item {
+  &:first-child {
+    margin-left: 0;
+  }
+}
+.set-icon__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+  transition: background-color 250ms $method-transition,
+    fill 250ms $method-transition;
+}
+.set-icon__icon {
+  width: 20px;
+  height: 20px;
+  /* fill: #afb1b8; */
+}
+/* .set-icon__link:hover .set-icon__icon,
+.set-icon__link:focus .set-icon__icon {
+ fill: #fff;
+  background-color: var(--accent-color);
+} */
+
+.set-icon__link {
+  &:hover,
+  &:focus {
+    background: $accent-color;
+    fill: #fff;
+  }
+}
+/* Footer social icons */
+.set-icon__fill {
+  fill: #fff;
+}
