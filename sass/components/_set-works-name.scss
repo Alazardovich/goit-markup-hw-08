@@ -1,6 +1,8 @@
 .set-works {
   margin-top: 0;
   display: flex;
+  @media screen and (min-width: 480px) {
+  }
 }
 .set-works__item {
   margin-left: 30px;
@@ -40,4 +42,7 @@
   letter-spacing: 0.03em;
 
   margin: 0 0 50px;
+  @media screen and (min-width: 480px) {
+    // display: none;
+  }
 }
