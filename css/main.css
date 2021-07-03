@@ -424,11 +424,17 @@ img {
 .section__name {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   margin: 0 0 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section__name {
+    font-size: 36px;
+  }
 }
 
 .section-background {
@@ -557,31 +563,55 @@ img {
 
 .set-client {
   list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
   padding: 0;
+  margin-left: -30px;
+  margin-bottom: -30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .set-client {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .set-client {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .set-client__item {
   margin-left: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 30px;
   fill: #afb1b8;
+  flex-basis: calc((100% - 60px) / 2);
 }
 
-.set-client__item:first-child {
-  margin-left: 0;
+@media screen and (min-width: 768px) {
+  .set-client__item {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .set-client__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .set-client__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  display: inline-block;
   padding: 0;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -599,6 +629,9 @@ img {
 }
 
 .set-client__link .set-client__icon {
+  position: absolute;
+  top: 16px;
+  transform: translateX(50%);
   width: 106px;
   height: 60px;
   fill: #afb1b8;

@@ -129,11 +129,13 @@
 
             <ul class="set-card list">
               <li class="set-card__item">
-                <img
-                  src="./images/img(3)(1).jpg"
-                  alt="Product Designer"
-                  width="100%"
-                />
+                <picture>
+                  <source srcset=".//images/laptop/img-min.jpg x1, .//images/laptop/img(1)-x2.jpg x2" media="(min-width:1200px)">
+                  <source srcset=".//images/tablet/img(1)x2-min.jpg x1, .//images/tablet/img-min.jpg x2" media="(min-width: 768px)">
+                  <source srcset="./images/mobile/img-min.jpg x1, ./images/mobile/img(1)-x2.jpg x2" media="(min-width=480px)">
+                <img src="./images/img(3)(1).jpg" alt="Product Designer" width="100%" />
+                </picture>
+                
                 <div class="set-card__title">
                   <h3 class="set-card__name">Игорь Демьяненко</h3>
                 <p>Product Designer</p>
@@ -166,11 +168,16 @@
             
 
               <li class="set-card__item">
+                <picture>
+                  <source srcset=".//images/laptop/img(2)-min.jpg x1, .//images/laptop/img(3)-x2.jpg x2" media="(min-width:1200px)">
+                  <source srcset=".//images/tablet/img(2)-min.jpg x1, .//images/tablet/img(3)x2-min.jpg x2" media="(min-width: 768px)">
+                  <source srcset=".//images/mobile/img(2)-min.jpg x1, .//images/mobile/img(2)x2.jpg x2" media="(min-width: 480px">
                 <img
                   src="./images/img(4)(1).jpg"
                   alt="Fronted Developer"
                   width="100%"
-                /><div class="set-card__title">
+                /></picture>
+                <div class="set-card__title">
                   <h3 class="set-card__name">Ольга Репина</h3>
                 <p>Fronted Developer</p>
                 <ul class="set-icon">
@@ -201,7 +208,12 @@
               
 
               <li class="set-card__item">
+                <picture>
+                  <source srcset=".//images/laptop/img(4)-min.jpg x1, .//images/laptop/img(5)-x2.jpg x2" media="(min-width:1200px)">
+                  <source srcset=".//images/tablet/img(4)-min.jpg x1, .//images/tablet/img(5)x2-min.jpg x2" media="(min-width: 768px)">
+                  <source srcset=".//images/mobile/img(4)-min.jpg x1, .//images/mobile/img(4)x2.jpg x2" media="(min-width: 480px">
                 <img src="./images/img(5)(1).jpg" alt="Marketing" width="100%" />
+                </picture>
                 <div class="set-card__title">
                   <h3 class="set-card__name">Николай Тарасов</h3>
                 <p>Marketing</p>
@@ -232,11 +244,15 @@
               </div>
 
               <li class="set-card__item">
+                <picture>
+                  <source srcset=".//images/laptop/img(6)-min.jpg x1, .//images/laptop/img(7)-x2.jpg x2" media="(min-width:1200px)">
+                  <source srcset=".//images/tablet/img(6)-min.jpg x1, .//images/tablet/img(7)x2-min.jpg x2" media="(min-width: 768px)">
+                  <source srcset=".//images/mobile/img(6)-min.jpg x1, .//images/mobile/img6x2.jpg x2" media="(min-width:480px">
                 <img
                   src="./images/img(6)(1).jpg"
                   alt="UI Designer"
                   width="100%"/>
-
+                </picture>
                 <div class="set-card__title">
                   <h3 class="set-card__name">Михаил Ермаков</h3>
                 <p>UI Designer</p>
@@ -275,7 +291,7 @@
        
       </section>
 
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
        <h2 class="section__name">Постоянные клиенты</h2>
         <ul class="set-client">
@@ -312,7 +328,7 @@
           </svg></a></li>
         </ul>
         </div>
-      </section>  -->
+      </section> 
       </main>
 
     <!-- <footer class="page-footer">
