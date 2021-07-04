@@ -227,10 +227,28 @@ img {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img(1)66.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero.jpg/Header img(2)(1)x1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .image-hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero.jpg/Header img(1).jpg");
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 768px), (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .image-hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero.jpg/Header-tabx2.jpg");
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px), (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .image-hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero.jpg/Imglapx2.jpg");
+  }
 }
 
 .page-hero {
@@ -243,19 +261,32 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   /* text-transform: uppercase; */
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+
+@media screen and (min-width: 1200px) {
+  .page-hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .page-hero__title {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   margin: 0 0 30px 0;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .page-hero__title {
+    font-size: 44px;
+  }
 }
 
 /* button */
@@ -619,6 +650,18 @@ img {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) {
+  .set-client__link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .set-client__link {
+    width: 170px;
+  }
+}
+
 .set-client__link:hover .set-client__icon,
 .set-client__link:focus .set-client__icon {
   fill: #2196f3;
@@ -630,8 +673,9 @@ img {
 
 .set-client__link .set-client__icon {
   position: absolute;
-  top: 16px;
-  transform: translateX(50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 106px;
   height: 60px;
   fill: #afb1b8;
