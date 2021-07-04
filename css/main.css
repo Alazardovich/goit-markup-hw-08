@@ -778,6 +778,13 @@ picture {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-adress-position {
+    text-align: left;
+    margin-left: 0;
+  }
+}
+
 address li {
   margin-top: 9px;
 }
@@ -851,6 +858,7 @@ address li {
 @media screen and (min-width: 1200px) {
   .invite {
     margin-left: 70px;
+    text-align: left;
   }
 }
 
@@ -891,8 +899,9 @@ address li {
   }
 }
 
-@media screen and (min-midth: 1200px) {
+@media screen and (min-width: 1200px) {
   .form {
+    text-align: left;
     margin-top: 0;
     margin-left: 93px;
   }
