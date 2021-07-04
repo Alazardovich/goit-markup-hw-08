@@ -13,13 +13,12 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-@media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (-moz-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .image-hero {
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (-moz-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -27,13 +26,19 @@
       ),
       url("/images/hero.jpg/Header\ img\(1\).jpg");
   }
-}
-@media (min-device-pixel-ratio: 2) and (min-width: 768px),
-  (-webkit-min-device-pixel-ratio: 2),
-  (-moz-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .image-hero {
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/images/hero.jpg/imgtab1x.jpg");
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (-webkit-min-device-pixel-ratio: 2),
+    (-moz-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -41,13 +46,19 @@
       ),
       url("/images/hero.jpg/Header-tabx2.jpg");
   }
-}
-@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
-  (-webkit-min-device-pixel-ratio: 2),
-  (-moz-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .image-hero {
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/images/hero.jpg/imglap1x.jpg");
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    (-webkit-min-device-pixel-ratio: 2),
+    (-moz-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -56,7 +67,6 @@
       url("/images/hero.jpg/Imglapx2.jpg");
   }
 }
-
 .page-hero {
   /* background: #2f303a; */
   color: #ffffff;
