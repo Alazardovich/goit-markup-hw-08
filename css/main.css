@@ -1387,12 +1387,6 @@ textarea:hover, textarea:focus {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-button__icon {
-  width: 24px;
-  height: 16px;
-  fill: black;
-}
-
 .mobile-nav {
   position: absolute;
   background-color: #fff;
@@ -1401,10 +1395,41 @@ textarea:hover, textarea:focus {
   top: 0;
 }
 
+.header-button__icon-open {
+  width: 24px;
+  height: 16px;
+  fill: #212121;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-button__icon-open:hover {
+  fill: #2196f3;
+}
+
+.header-button__icon-close {
+  fill: #212121;
+  width: 19px;
+  height: 19px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-button__icon-close:hover {
+  fill: #2196f3;
+}
+
+.menu-open {
+  border: none;
+  background-color: #fff;
+}
+
 .menu-close {
   position: absolute;
-  top: 21px;
-  right: 25px;
+  top: 25px;
+  right: 21px;
+  border: none;
+  background-color: #fff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #212121;
 }
 
 .mobile-menu__link {
@@ -1450,16 +1475,20 @@ textarea:hover, textarea:focus {
 }
 
 .mobile-nav__container {
-  position: relative;
-  padding-top: 40px;
-  padding-left: 40px;
-  height: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  position: relative;
+  padding: 40px 0;
+  height: 100%;
 }
 
 .mobile-button-soc {
   position: absolute;
+}
+
+.mobile-nav .is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 /*# sourceMappingURL=main.css.map */

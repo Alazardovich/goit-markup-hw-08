@@ -48,16 +48,17 @@
         </ul> -->
 
 
-         <button type="button" class="menu-open"><svg class="header-button__icon">
-          <use href="./images/icons.svg/menu_40px.svg"></use>
-          O</svg></button>
+         <button type="button" class="menu-open"><svg class="header-button__icon-open">
+          <use href="./images/icon/icons.svg#menuicon"></use>
+          </svg></button>
       </div>
 
-      <div class="mobile-nav">
-        
+      <div class="mobile-nav is-hidden">
+
         <div class="mobile-nav__container">
-          <button type="button" class="menu-close">X</button>
-        <nav>
+          <button type="button" class="menu-close"><svg class="header-button__icon-close"><use href="./images/icon/icons.svg#menuclose">
+          </use></svg></button>
+        <nav class="mobile-nav__position">
           <ul class="mobile-menu list">
             <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Студия</a></li>
             <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Портфолио</a></li>
@@ -483,25 +484,7 @@
     </div>
       </div>
     <script src="./js/modal.js"></script>
- <script>
-    (() => {
-
-  document.querySelector('.js-speaker-form')
-  .addEventListener('submit', e => {
-
-    e.preventDefault();
-
-
-
-    new FormData(e.currentTarget).forEach((value, name) =>
-
-      console.log(`${name}: ${value}`),
-
-    );
-
-  });
-
-})();
-</script>
+    <script src="./js/menu.js"></script>
+ 
   </body>
 </html>

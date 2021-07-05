@@ -80,5 +80,11 @@
         <symbol id="subscribe" viewBox="0 0 24 24">
             <path d="M24 0L0 13.5l7.67 2.8407L19.5 5.25l-8.9983 12.1396.0073.0027-.009-.0027v6.6105l4.3013-5.0181 5.4488 2.0181L24 0z"/>
         </symbol>
+        <symbol id="menuicon" viewBox="0 0 24 16">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.6667V0h24v2.6667H0zm0 6.6666h24V6.6667H0v2.6666zM0 16h24v-2.6667H0V16z"/>
+        </symbol>
+        <symbol id="menuclose" viewBox="0 0 19 19">
+            <path d="M18.6667 1.88L16.7867 0 9.3333 7.4533 1.88 0 0 1.88l7.4533 7.4533L0 16.7867l1.88 1.88 7.4533-7.4534 7.4534 7.4534 1.88-1.88-7.4534-7.4534L18.6667 1.88z"/>
+        </symbol>
     </defs>
 </svg>
