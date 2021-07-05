@@ -1,0 +1,71 @@
+.header-button__icon {
+  width: 24px;
+  height: 16px;
+  fill: black;
+}
+.mobile-nav {
+  position: absolute;
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+}
+
+.menu-close {
+  position: absolute;
+  top: 21px;
+  right: 25px;
+}
+.mobile-menu__link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: #212121;
+  text-decoration: none;
+}
+.mobile-contacts__link {
+  font-family: $primery-text;
+  font-weight: 500;
+
+  letter-spacing: 0.02em;
+}
+.mobile-tel {
+  color: #2196f3;
+  font-size: 34px;
+  line-height: 1.17;
+}
+.mobile-email {
+  font-size: 24px;
+  line-height: 1.16;
+  color: #757575;
+}
+.mobile-social__link {
+  font-family: $primery-text;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.mobile-social {
+  display: flex;
+}
+.mobile-nav__container {
+  position: relative;
+  padding-top: 40px;
+  padding-left: 40px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.mobile-button-soc {
+  position: absolute;
+}
+// .mobile-social__item {
+//   //   border-right: 1px solid rgba(33, 33, 33, 0.2);
+//   //   transform: rotate(90deg);
+// }
