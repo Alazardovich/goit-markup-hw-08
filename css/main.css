@@ -145,9 +145,14 @@ picture {
   align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .nav-header {
+    display: none;
+  }
+}
+
 .site-nav {
   display: flex;
-  margin-left: 93px;
   padding: 0;
 }
 
@@ -171,18 +176,50 @@ picture {
   background: #2196f3;
 }
 
+@media screen and (max-width: 767px) {
+  .auth-nav.list {
+    display: none;
+  }
+}
+
 .auth-nav {
   display: flex;
   align-items: center;
-  padding: 0;
+  padding: 21px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .auth-nav {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav {
+    flex-direction: row;
+    padding: 0;
+  }
 }
 
 .auth-nav .auth-nav__item {
-  margin-right: 50px;
+  margin: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav .auth-nav__item {
+    margin-right: 50px;
+  }
 }
 
 .auth-nav .auth-nav__item:last-child {
   margin-right: 0;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav .auth-nav__item:last-child {
+    margin-top: 0;
+  }
 }
 
 .link-header {
@@ -192,9 +229,15 @@ picture {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: inherit;
-  padding-top: 32px;
-  padding-bottom: 32px;
   text-decoration: none;
+  padding: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .link-header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .link-header {
@@ -1420,6 +1463,12 @@ textarea:hover, textarea:focus {
 .menu-open {
   border: none;
   background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
 }
 
 .menu-close {
