@@ -43,6 +43,12 @@ picture {
   /* background-color: tomato; */
 }
 
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
@@ -1072,8 +1078,15 @@ address li {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 528px;
+  width: 100%;
+  height: auto;
   padding: 40px;
+}
+
+@media screen and (max-width: 529px) {
+  .modal-form {
+    width: 100vw;
+  }
 }
 
 /* .spacing-form {
@@ -1121,7 +1134,6 @@ address li {
 
 .modal-form__input {
   position: relative;
-  width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -1190,8 +1202,6 @@ textarea:hover, textarea:focus {
 .agreement {
   text-align: center;
   font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -1199,11 +1209,11 @@ textarea:hover, textarea:focus {
   margin-top: 20px;
 }
 
-.engreement__input:focus + .engreement_icon {
+.engreement__input:focus + .engreement__icon {
   border-color: #2196f3;
 }
 
-.engreement__input:checked + .engreement_icon {
+.engreement__input:checked + .engreement__icon {
   border-color: transparent;
   background-color: #2196f3;
   background-image: url("../images/icons.svg/Vector(1)(1).svg");
@@ -1212,7 +1222,7 @@ textarea:hover, textarea:focus {
   background-origin: border-box;
 }
 
-.engreement_icon {
+.engreement__icon {
   display: inline-block;
   align-items: center;
   justify-content: center;
@@ -1225,7 +1235,6 @@ textarea:hover, textarea:focus {
 }
 
 .agreement__info {
-  display: inline-block;
   font-size: 14px;
 }
 
@@ -1250,11 +1259,12 @@ textarea:hover, textarea:focus {
   background-color: #afb1b8;
 } */
 .angreement-button {
+  display: block;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.88;
-  margin: 30px 124px 0 124px;
+  margin: 0 auto;
   padding: 10px 55px;
   text-align: center;
   letter-spacing: 0.06em;
@@ -1434,7 +1444,7 @@ textarea:hover, textarea:focus {
   position: absolute;
   background-color: #fff;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   top: 0;
 }
 
