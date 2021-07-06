@@ -145,13 +145,6 @@ picture {
   align-items: center;
 }
 
-@media screen and (max-width: 767px) {
-  .auth-nav,
-  .site-nav {
-    display: none;
-  }
-}
-
 .site-nav {
   display: flex;
   margin-left: 93px;
