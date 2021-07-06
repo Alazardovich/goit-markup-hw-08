@@ -110,6 +110,12 @@ picture {
   /* display: flex; */
 }
 
+@media screen and (max-width: 767px) {
+  .logo {
+    padding: 16px 0;
+  }
+}
+
 .logo__studio-black {
   color: #212121;
 }
@@ -137,6 +143,13 @@ picture {
 .nav-header {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .auth-nav,
+  .site-nav {
+    display: none;
+  }
 }
 
 .site-nav {

@@ -21,6 +21,12 @@
   display: flex;
   align-items: center;
 }
+// @media screen and (max-width: 767px) {
+//   .auth-nav,
+//   .site-nav {
+//     display: none;
+//   }
+// }
 .site-nav {
   display: flex;
   margin-left: 93px;
@@ -44,7 +50,12 @@
   bottom: -1px;
   background: #2196f3;
 }
-
+// @media screeen and (max-width: 767px) {
+//   .auth-nav,
+//   .site-nav {
+//     display: none;
+//   }
+// }
 .auth-nav {
   display: flex;
   align-items: center;
