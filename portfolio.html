@@ -15,10 +15,10 @@
   </head>
   <body>
   <header class="page-header">
-    <div class="container">
-  
+    <div class="container page-header__container">
+      <a class="logo" href="./index.html">Web<span class="logo logo__studio-black">Studio</span></a>
       <nav class="nav-header">
-        <a class="logo" href="./index.html">Web<span class="logo logo__studio-black">Studio</span></a>
+  
         <ul class="site-nav list">
           <li class="site-nav__item">
             <a class="link-header" href="./index.html">Студия</a>
@@ -46,7 +46,47 @@
             </svg>+38 096 111 11 11</a>
         </li>
       </ul>
+  
+  
+      <button type="button" class="menu-open"><svg class="header-button__icon-open">
+          <use href="./images/icon/icons.svg#menuicon"></use>
+        </svg></button>
     </div>
+  
+    <div class="mobile-nav is-hidden">
+  
+      <div class="mobile-nav__container">
+        <button type="button" class="menu-close"><svg class="header-button__icon-close">
+            <use href="./images/icon/icons.svg#menuclose">
+            </use>
+          </svg></button>
+  
+        <nav class="mobile-nav__position">
+          <ul class="mobile-menu list">
+            <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Студия</a></li>
+            <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Портфолио</a></li>
+            <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакты</a></li>
+          </ul>
+        </nav>
+  
+        <ul class="mobile-contacts list">
+          <li class="mobile-contacts__item">
+            <a class="mobile-contacts__link mobile-tel" href="tel:+380961111111">+38 096 111 1111</a>
+          </li>
+          <li class="mobile-contacts__item"><a class="mobile-contacts__link mobile-email"
+              href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+        <ul class="mobile-social list">
+          <li class="mobile-social__item"><a class="mobile-social__link" href="">Instagram</a></li>
+          <li class="mobile-social__item"><a class="mobile-social__link" href="">Twitter</a></li>
+          <li class="mobile-social__item"><a class="mobile-social__link" href="">Facebook</a></li>
+          <li class="mobile-social__item"><a class="mobile-social__link" href="">LinkedIn</a></li>
+        </ul>
+      </div>
+  
+  
+    </div>
+  
   </header>
 
     <section class="section-button">
