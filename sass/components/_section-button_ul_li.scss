@@ -32,34 +32,43 @@
 }
 
 .set-project .set-project__item {
-  flex-basis: calc(100% / 3 -20px);
-  margin-left: $card-set-gap;
-  margin-top: $card-set-gap;
-  transition: box-shadow 250ms $method-transition;
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 -20px);
+    margin-left: $card-set-gap;
+    margin-top: $card-set-gap;
+    transition: box-shadow 250ms $method-transition;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: $card-set-gap;
+    margin-top: $card-set-gap;
+    transition: box-shadow 250ms $method-transition;
+  }
 }
-.set-project__item {
-  &:nth-child(3n + 1) {
-    margin-left: 0;
-  }
-  &:nth-child(-n + 3) {
-    margin-top: auto;
-  }
-  &:hover,
-  &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
+// @media screen and (min-width: 1200px) {
+//   .set-project__item {
+//     &:nth-child(3n + 1) {
+//       margin-left: 0;
+//     }
+//     &:nth-child(-n + 3) {
+//       margin-top: auto;
+//     }
+//   }
+&:hover,
+&:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .set-project__title {
-  padding: 0 0 4px 0;
+  // padding: 0 0 4px 0;
   text-align: left;
-  margin: 0 24px;
+  // margin: 0 24px;
 }
 
 .set-project__text {
   text-align: left;
-  margin: 0 24px;
+  // margin: 0 24px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -70,7 +79,7 @@
 }
 .card-content {
   border: 1px solid #eeeeee;
-  padding: 20px 0;
+  // padding: 20px 0;
 }
 .product__thumb > p {
   font-family: Roboto;
@@ -79,22 +88,31 @@
   letter-spacing: 0.03em;
   text-align: left;
   color: #ffffff;
-  padding: 63px 24px;
+  // padding: 63px 24px;
 }
 
 .product__thumb {
   position: relative;
   bottom: 0;
   left: 0;
-  max-width: 370px;
+  max-width: 450px;
   max-height: 294px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 370px;
+  }
 }
 .product {
+  padding: 0;
+  margin: 0;
   cursor: pointer;
   transition: transform 250ms $method-transition;
+  display: block;
 }
 .product {
   &:hover .product__text {
