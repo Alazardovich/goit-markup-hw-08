@@ -1,5 +1,5 @@
 .mobile-nav {
-  position: fixed;
+  position: absolute;
   background-color: #fff;
   width: 100vw;
   height: auto;
@@ -121,7 +121,7 @@
   //   }
 }
 .mobile-nav__position {
-  margin-bottom: 40%;
+  margin-bottom: 64px;
 }
 .mobile-button-soc {
   position: absolute;

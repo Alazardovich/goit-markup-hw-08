@@ -1367,10 +1367,23 @@ textarea:hover, textarea:focus {
 }
 
 .set-project {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   padding: 0;
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .set-project {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .set-project {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .set-project .set-project__item {
@@ -1457,7 +1470,7 @@ textarea:hover, textarea:focus {
 }
 
 .mobile-nav {
-  position: fixed;
+  position: absolute;
   background-color: #fff;
   width: 100vw;
   height: auto;
@@ -1597,7 +1610,7 @@ textarea:hover, textarea:focus {
 }
 
 .mobile-nav__position {
-  margin-bottom: 40%;
+  margin-bottom: 64px;
 }
 
 .mobile-button-soc {
