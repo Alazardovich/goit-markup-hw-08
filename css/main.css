@@ -34,7 +34,6 @@ picture {
 }
 
 .container {
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -1299,7 +1298,7 @@ textarea:hover, textarea:focus {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin-bottom: 56px;
+  margin-bottom: 40px;
   padding: 0;
   margin-top: 0;
 }
@@ -1386,28 +1385,40 @@ textarea:hover, textarea:focus {
   }
 }
 
-.set-project .set-project__item {
-  flex-basis: calc(100% / 3 -20px);
-  margin-left: 30px;
+.set-project__item:not(:first-child) {
   margin-top: 30px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .set-project__item:not(:first-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .set-project .set-project__item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 354px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .set-project__item:nth-child(3n + 1) {
-    margin-left: 0;
-  }
-  .set-project__item:nth-child(-n + 3) {
-    margin-top: auto;
-  }
-  :hover,
-  :focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  .set-project .set-project__item {
+    flex-basis: calc((100% - 90px) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 370px;
   }
 }
 
 .set-project__title {
+  padding: 0;
   text-align: left;
+  margin-bottom: 4px;
 }
 
 .set-project__text {
@@ -1419,11 +1430,14 @@ textarea:hover, textarea:focus {
   line-height: 30px;
   letter-spacing: 0.03em;
   color: #757575;
+  padding: 0;
+  margin: 0;
 }
 
 .card-content {
   border: 1px solid #eeeeee;
-  padding: 20px 0;
+  padding: 20px 24px;
+  height: 110px;
 }
 
 .product__thumb > p {
@@ -1433,13 +1447,14 @@ textarea:hover, textarea:focus {
   letter-spacing: 0.03em;
   text-align: left;
   color: #ffffff;
+  padding: 63px 24px;
+  background-repeat: no-repeat;
 }
 
 .product__thumb {
   position: relative;
   bottom: 0;
   left: 0;
-  max-width: 450px;
   max-height: 294px;
   margin-left: auto;
   margin-right: auto;
