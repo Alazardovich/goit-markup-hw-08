@@ -1497,12 +1497,23 @@ textarea:hover, textarea:focus {
 }
 
 .mobile-nav {
-  position: absolute;
+  position: fixed;
   background-color: #fff;
   width: 100vw;
   height: auto;
   top: 0;
+  left: 0;
+  overflow-y: auto;
   z-index: 9999;
+}
+
+.mobile-nav__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 40px;
+  height: 100%;
 }
 
 .header-button__icon-open {
@@ -1528,6 +1539,7 @@ textarea:hover, textarea:focus {
 }
 
 .menu-open {
+  display: inline-block;
   border: none;
   background-color: #fff;
 }
@@ -1539,6 +1551,7 @@ textarea:hover, textarea:focus {
 }
 
 .menu-close {
+  display: inline-block;
   position: absolute;
   top: 25px;
   right: 21px;
@@ -1553,6 +1566,7 @@ textarea:hover, textarea:focus {
 }
 
 .mobile-menu__link {
+  display: inline-block;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -1624,16 +1638,6 @@ textarea:hover, textarea:focus {
   margin-right: 10px;
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-}
-
-.mobile-nav__container {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  padding: 40px;
-  width: 100%;
-  height: auto;
 }
 
 .mobile-nav__position {
