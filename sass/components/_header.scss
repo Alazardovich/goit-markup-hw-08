@@ -12,9 +12,11 @@
 /* header menu */
 .page-header__container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0;
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
 }
 
 .nav-header {
@@ -32,8 +34,10 @@
 // }
 .site-nav {
   display: flex;
-  // margin-left: 93px;
   padding: 0;
+  @media screen and (min-width: 768px) {
+    margin-left: 93px;
+  }
 }
 .site-nav .site-nav__item {
   margin-left: 50px;
@@ -71,10 +75,12 @@
 
   @media screen and (min-width: 768px) {
     flex-direction: column;
+    margin-left: 84px;
   }
   @media screen and (min-width: 1200px) {
     flex-direction: row;
     padding: 0;
+    margin-left: 305px;
   }
 }
 .auth-nav .auth-nav__item {
