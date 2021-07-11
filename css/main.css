@@ -838,7 +838,7 @@ picture {
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin: 0;
-  padding: 60px 0 60px;
+  padding: 60px 0 0;
 }
 
 .footer-adress-position {
