@@ -310,7 +310,7 @@ picture {
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/Headerx1.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Headerx1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -324,25 +324,25 @@ picture {
 
 @media screen and (min-width: 768px) {
   .image-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/imgtab1x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/imgtab1x.jpg");
   }
 }
 
 @media (min-device-pixel-ratio: 2) and (min-width: 768px), (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .image-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/Header-tabx2.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Header-tabx2.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .image-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/imglap1x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/imglap1x.jpg");
   }
 }
 
 @media (min-device-pixel-ratio: 2) and (min-width: 1200px), (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .image-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/Imglapx2.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Imglapx2.jpg");
   }
 }
 
@@ -1077,6 +1077,13 @@ address li {
   text-align: left;
 }
 
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 630px;
+  }
+}
+
 .modal-button {
   position: absolute;
   width: 30px;
@@ -1271,6 +1278,12 @@ textarea:hover, textarea:focus {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1199px) {
+  .engreement__icon {
+    margin: 20px 0 0 0;
+  }
+}
+
 .agreement__info {
   font-size: 14px;
 }
@@ -1455,8 +1468,22 @@ textarea:hover, textarea:focus {
   }
 }
 
-.set-project .set-project__item:nth-child(2n + 1) {
-  margin-left: 15px;
+@media screen and (min-width: 768px) {
+  .set-project .set-project__item:nth-child(2n + 1) {
+    margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .set-project .set-project__item:nth-child(2n + 1) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #set-project__item-margin {
+    margin-left: 15px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1549,6 +1576,7 @@ textarea:hover, textarea:focus {
 
 .product__text {
   position: absolute;
+  width: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   margin: 0;
   bottom: 0;
