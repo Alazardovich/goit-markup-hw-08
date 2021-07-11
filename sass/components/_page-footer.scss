@@ -29,7 +29,7 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin: 0;
-  padding: 60px 0 0;
+  padding: 60px 0;
 }
 .footer-adress-position {
   text-align: center;
@@ -144,7 +144,7 @@ address li {
   text-align: center;
 
   @media screen and (min-width: 768px) {
-    margin: 60px auto;
+    margin: 60px auto 0;
   }
   @media screen and (min-width: 1200px) {
     text-align: left;

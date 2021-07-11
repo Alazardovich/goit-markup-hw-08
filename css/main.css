@@ -838,7 +838,7 @@ picture {
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin: 0;
-  padding: 60px 0 0;
+  padding: 60px 0;
 }
 
 .footer-adress-position {
@@ -987,7 +987,7 @@ address li {
 
 @media screen and (min-width: 768px) {
   .form {
-    margin: 60px auto;
+    margin: 60px auto 0;
   }
 }
 
