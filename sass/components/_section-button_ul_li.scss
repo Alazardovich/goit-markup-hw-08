@@ -21,13 +21,16 @@
   // flex-wrap: wrap;
   padding: 0;
   margin-bottom: 0;
+  margin-top: 40px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 30px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 50px;
   }
 }
 
@@ -35,6 +38,10 @@
   margin-top: 30px;
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
+  }
+}
+.set-project__item:nth-child(-n + 2) {
+  @media screen and (min-width: 768px) {
   }
 }
 .set-project .set-project__item {

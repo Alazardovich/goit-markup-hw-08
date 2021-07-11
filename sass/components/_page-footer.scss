@@ -94,6 +94,19 @@ address li {
     margin-top: 0;
   }
 }
+.page-footer__adress {
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 76px;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+}
 .invite {
   text-align: center;
   @media screen and (min-width: 768px) {

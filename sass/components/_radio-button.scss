@@ -8,8 +8,12 @@
   /* text-align: center; */
   letter-spacing: 0.03em;
   color: $primery-text;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .set-button {
@@ -17,15 +21,17 @@
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin-bottom: 40px;
   padding: 0;
-  margin-top: 0;
-  @media screen and (min-width: 1200px) {
+  margin: 0;
+  @media screen and (min-width: 768px) {
     justify-content: center;
   }
 }
-.set-button li {
-  margin-top: 21px;
+.set-button li:first-child {
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 .set-button__button {
   font-family: $primery-text;
